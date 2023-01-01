@@ -1,0 +1,7 @@
+For 1p1c, semaphore S is not necessary since mutex is not mandatory here, after producer writes the file, the consumer is then waken up to read the file.
+
+For 1pmc, mutex is added to consumer.c in order to make sure only one consumer can access the critical section at the same time.
+
+For mp1c, mutex is added to producer.c in order to make sure only one producer can access the critical section at the same time.
+
+For mcmc, mutex is needed for both producer and consumer.
